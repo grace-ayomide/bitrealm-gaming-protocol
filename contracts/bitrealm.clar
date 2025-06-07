@@ -515,3 +515,8 @@
     (>= new-total-experience required-experience)
   )
 )
+
+;; CONTRACT INITIALIZATION
+
+;; Initialize protocol admin for contract deployment
+(map-set protocol-admin-whitelist tx-sender true)
